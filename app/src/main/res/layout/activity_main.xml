@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#c1c1c1"
+    tools:context="com.example.saisreenivas.qrscanner.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_1"
+        android:text="@string/app_name"
+        android:textSize="35dp"
+        android:layout_margin="0dp"
+        android:textAlignment="center"
+        style="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"
+        android:id="@+id/qrscanner"/>
+    <Button
+        android:background="@drawable/bg_1"
+        android:text="Show History"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:id="@+id/history"
+        android:onClick="history"
+        android:layout_below="@id/qrscanner"/>
+    <Button
+        android:background="@drawable/bg_1"
+        android:text="Delete History"
+        style="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"
+        android:textSize="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/deleteHistory"
+        android:onClick="deleteHistory"
+        android:layout_below="@id/history"/>
+    <Button
+        android:background="@drawable/bg_1"
+        android:text="Show FeedBack"
+        style="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:id="@+id/feedhistory"
+        android:onClick="history"
+        android:layout_below="@id/deleteHistory"/>
+
+
+</RelativeLayout>
